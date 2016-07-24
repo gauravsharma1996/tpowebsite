@@ -202,10 +202,13 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-						          Google Summer of Code      
-								  <img src="assets/images/gsoc.jpg" height="50" hspace="5">
-								  </img>
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" onclick="myFunction('gsoc_projects')">
+									<div id="gsoc_projects" style="text-align: center; vertical-align: top; font-size:large">
+										Google Summer of Code
+									</div>
+									<div style="text-align: center; vertical-align: top;">
+										<img src="assets/images/gsoc.jpg" height="50" hspace="5"/>
+									</div>
 						        </a>
 						      </h4>
                                 </div>
@@ -230,11 +233,15 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-						          Under Different Organization                                              
-								  <img src="assets/images/nic.png" height="50" hspace="5"/>
-								  <img src="assets/images/Mecon.png" height="50" hspace="5"/>
-								  <img src="assets/images/Huehealth.png" height="50" hspace="5"/>
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" onclick="myFunction('org_projects')">
+									<div id="org_projects" style="text-align: center; vertical-align: top;font-size:large">
+										Under Different Organization        
+									</div>
+									<div style="text-align: center; vertical-align: top;">
+										<img src="assets/images/nic.png" height="50" hspace="5"/>
+										<img src="assets/images/Mecon.png" height="50" hspace="5"/>
+										<img src="assets/images/Huehealth.png" height="50" hspace="5"/>
+									</div>
 								  </a>
 								  </h4>
 								  </div>
@@ -260,13 +267,17 @@
 							</div>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">
-						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-						           Self Initiated
-								   <img src="assets/images/squadlogo.png" hspace="5" height="50"/>
-								   <img src="assets/images/algologo.png" hspace="5"height="50"/>
+                                    <h1 class="panel-title" >
+						        <a  data-toggle="collapse" data-parent="#accordion" href="#collapse3" onclick="myFunction('self_projects')">
+						           <div id="self_projects" style="text-align: center; vertical-align: top;font-size:large">
+								   Self Initiated
+								   </div>
+								   <div style=" text-align: center; vertical-align: top;">			
+								   <img  src="assets/images/algologo.png" hspace="5" height="50"/>
+								   <img  src="assets/images/squadlogo.png" height="50"/> 
+								   </div>
 						        </a>
-						      </h4>
+						      </h1>
                                 </div>
                                 <div id="collapse3" class="panel-collapse collapse">
                                     <div class="panel-body">
@@ -309,9 +320,13 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-						          Android Application Development
-								  <img src ="assets/images/androidlogo.png" height="50" hspace="10"/>
+						        <a  data-toggle="collapse" data-parent="#accordion" href="#collapse4" onclick="myFunction('android_projects')">
+								<div id="android_projects" style="text-align: center; vertical-align: top;font-size:large">
+									Android Application Development
+								</div>
+								<div style="text-align: center; vertical-align: top;">
+									<img src ="assets/images/androidlogo.png" height="50" hspace="10"/>
+								</div>
 						        </a>
 						      </h4>
                                 </div>
@@ -653,6 +668,21 @@
     <!-- Bootstrap core JavaScript
 	================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+	<script>
+function myFunction(a) {
+	if (document.getElementById(a).style.fontSize == "x-large")
+	{
+		document.getElementById(a).style.fontSize = "large";
+	}
+	else
+	{
+		document.getElementById(a).style.fontSize = "x-large";
+	}
+}
+function myFunction1(a) {
+	document.getElementById(a).style.fontSize = "small";
+}
+</script>
     <script src="assets/js/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
