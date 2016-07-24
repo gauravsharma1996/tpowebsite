@@ -200,10 +200,10 @@
                         <div class="panel-group" id="accordion">
 
                             <div class="panel panel-default">
-                                <div class="panel-heading">
+                                <div id="gsoc_head" class="panel-heading">
                                     <h4 class="panel-title">
-						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" onclick="myFunction('gsoc_projects')">
-									<div id="gsoc_projects" style="text-align: center; vertical-align: top; font-size:large">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" onclick="myFunction('gsoc_projects','gsoc_head')">
+									<div id="gsoc_projects" style="text-align: center; vertical-align: top; font-size:large;text-decoration: underline;text-transform:uppercase">
 										Google Summer of Code
 									</div>
 									<div style="text-align: center; vertical-align: top;">
@@ -231,10 +231,10 @@
                                 </div>
 							</div>
                             <div class="panel panel-default">
-                                <div class="panel-heading">
+                                <div id="org_head" class="panel-heading">
                                     <h4 class="panel-title">
-						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" onclick="myFunction('org_projects')">
-									<div id="org_projects" style="text-align: center; vertical-align: top;font-size:large">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" onclick="myFunction('org_projects','org_head')">
+									<div id="org_projects" style="text-align: center; vertical-align: top;font-size:large;text-decoration: underline;text-transform:uppercase">
 										Under Different Organization        
 									</div>
 									<div style="text-align: center; vertical-align: top;">
@@ -266,10 +266,10 @@
                                 </div>	
 							</div>
                             <div class="panel panel-default">
-                                <div class="panel-heading">
+                                <div id='self_head' class="panel-heading">
                                     <h1 class="panel-title" >
-						        <a  data-toggle="collapse" data-parent="#accordion" href="#collapse3" onclick="myFunction('self_projects')">
-						           <div id="self_projects" style="text-align: center; vertical-align: top;font-size:large">
+						        <a  data-toggle="collapse" data-parent="#accordion" href="#collapse3" onclick="myFunction('self_projects','self_head')">
+						           <div id="self_projects" style="text-align: center; vertical-align: top;font-size:large;text-decoration: underline;text-transform:uppercase">
 								   Self Initiated
 								   </div>
 								   <div style=" text-align: center; vertical-align: top;">			
@@ -318,10 +318,10 @@
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading">
+                                <div id="android_head" class="panel-heading">
                                     <h4 class="panel-title">
-						        <a  data-toggle="collapse" data-parent="#accordion" href="#collapse4" onclick="myFunction('android_projects')">
-								<div id="android_projects" style="text-align: center; vertical-align: top;font-size:large">
+						        <a  data-toggle="collapse" data-parent="#accordion" href="#collapse4" onclick="myFunction('android_projects','android_head')">
+								<div id="android_projects" style="text-align: center; vertical-align: top;font-size:large;text-decoration: underline;text-transform:uppercase">
 									Android Application Development
 								</div>
 								<div style="text-align: center; vertical-align: top;">
@@ -669,14 +669,17 @@
 	================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 	<script>
-function myFunction(a) {
+function myFunction(a,b) {
 	if (document.getElementById(a).style.fontSize == "x-large")
 	{
 		document.getElementById(a).style.fontSize = "large";
+		document.getElementById(b).style.background="#e9f3e3";
+		
 	}
 	else
 	{
 		document.getElementById(a).style.fontSize = "x-large";
+		document.getElementById(b).style.background="#99ff99";
 	}
 }
 function myFunction1(a) {
